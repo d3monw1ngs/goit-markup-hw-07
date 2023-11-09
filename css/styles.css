@@ -830,8 +830,7 @@ header {
 
     .hero-button {
         margin-left: 128px;
-        margin-top: 80px;
-        
+        margin-top: 80px;        
     }
 
     .benefits-icon {
@@ -967,8 +966,7 @@ header {
         background-color: transparent;
         padding: 0;
         min-height: 40px;
-        min-width: 40px;
-        
+        min-width: 40px;        
     }
 
     .menu-container.is-open {
@@ -1048,8 +1046,7 @@ header {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        margin-bottom: 48px;
-       
+        margin-bottom: 48px;       
     }
 
     .mobile-contacts-link {
@@ -1095,24 +1092,24 @@ header {
         background-color: var(--green);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
-
-
-
-
-
 }
 
 /* tablet setup */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .container {
         width: 768px;
     }
+
+    
 }
 
 /* desktop setup */
-@media (min-width: 1158px) {
+@media screen and (min-width: 1200px) {
     .container {
         width: 1158px;
+    }
+
+    .burger-button {
+        display: none;
     }
 }
