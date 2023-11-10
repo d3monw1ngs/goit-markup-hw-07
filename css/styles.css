@@ -17,31 +17,45 @@
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
     color: var(--navyblue, #2e2f42);
-}
-
-.container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
+    margin: 0;
 }
 
 img {
     display: block;
     max-width: 100%;
+    width: 100%;
     height: auto;
+}
+
+/* GENERAL STYLING */
+.container {
+    max-width: 428px;
+    margin: 0 auto;
+    padding: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media screen and (min-width: 1158px) {
+        max-width: 1158px;
+    }
 }
 
 .section {
     padding-top: 120px;
 }
 
-/* GENERAL STYLING */
+
 .link {
     text-decoration: none;
     color: var(--navy-blue);
@@ -53,6 +67,8 @@ img {
 
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
@@ -708,14 +724,14 @@ header {
  
 }
 
-.footer-socials {
+.footer-socials-container {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
 }
 
-.footer-text-socials {
+.footer-socials-text {
     color: white;
     font-weight: 500;
     line-height: 24px; /* 150% */
@@ -725,12 +741,13 @@ header {
     padding-top: 100px;
 }
 
-.footer-list {
+.footer-socials-list {
     display: flex;
     gap: 16px;
+    margin-left: 100px;
 }
 
-.footer-icon {
+.footer-socials-icon {
     background-color: var(--iris);
     border-radius: 50%;
     height: 40px;
@@ -743,13 +760,18 @@ header {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icon:hover,
-.footer-icon:focus,
-.footer-icon:active {
+.footer-socials-icon svg{
+    width: 16px;
+    height: 16px;
+}
+
+.footer-socials-icon:hover,
+.footer-socials-icon:focus,
+.footer-socials-icon:active {
     background-color:#31D0AA
 }
 
-.footer-col-3 {
+.footer-form-container {
     padding-top: 100px;
     padding-left: 70px;
 }
@@ -834,8 +856,6 @@ header {
     }
 
     .hero-container {
-        /* padding-top: 188px;
-        padding-bottom: 188px; */
         background: linear-gradient(to bottom, 
         rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)),
@@ -946,24 +966,26 @@ header {
     }
 
     .footer-logo {
-        padding-right: 0;
-        padding-left: 60px;
         padding-bottom: 17.5px;
         padding-top: 97.5px;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .footer-text {
         padding-left: 0;
         padding-bottom: 72px;
+        margin-left: 80px;
     }
 
-    .footer-col-2,
-    .footer-col-3 {
+    .footer-socials-container,
+    .footer-form-container {
         margin: 0;
         padding: 0;
     }
 
-    .footer-text-socials {
+    .footer-socials-text {
         padding-top: 0;
         justify-content: center;
 
@@ -1122,7 +1144,7 @@ header {
 }
 
 /* tablet setup */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
     .container {
         width: 768px;
     }
@@ -1148,7 +1170,14 @@ header {
         flex-direction: column;
         padding: 0;
         margin: 0;
-        gap: 0;
+        gap: 8px;
+    }
+
+    .contact-item {
+        font-size: 12px;
+        line-height: 14px; /* 116.667% */
+        letter-spacing: 0.48px;
+        gap: 8px;
     }
 
     .nav-logo {
@@ -1167,22 +1196,25 @@ header {
         display: none;
     }
 
+    .benefits-container {
+        padding: 0;
+    }
+
     .benefit-list {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        padding-left: 0;
+        padding: 0;
         
     }
 
     .hero-container {
-         background: linear-gradient(to bottom, 
+        background: linear-gradient(to bottom, 
         rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)),
         url("../images/hero-tablet.jpg");
-        background-size: cover;
     }
 
     .bg-dark {
