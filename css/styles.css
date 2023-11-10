@@ -969,7 +969,7 @@ header {
 
     }
 
-       .footer-sub-title {
+    .footer-sub-title {
         display: flex;
         justify-content: center;
     }
@@ -1124,7 +1124,7 @@ header {
 /* tablet setup */
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 768px;
+        width: 768px;
     }
 
     .burger-button,
@@ -1193,11 +1193,26 @@ header {
         display: none;
     }
 
-    
+    .team-list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 72px;
+    }
 
+    .customer-icon {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        row-gap: 72px;
+    }
 
-
-  
+ 
 }
 
 /* desktop setup */
