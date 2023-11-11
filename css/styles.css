@@ -763,11 +763,6 @@ header {
     background-color:#31D0AA; 
 }
 
-.footer-form-container {
-    /* padding-top: 100px;
-    padding-left: 70px; */
-}
-
 .footer-sub-title {
     color: var(--WHITE, #FFF);
     font-size: 16px;
@@ -946,6 +941,11 @@ header {
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
+        padding-top: 0;
+    }
+
+    .footer-column1 {
+        display: block;
     }
 
     .footer-logo {
@@ -959,7 +959,7 @@ header {
     .footer-text {
         padding-left: 0;
         padding-bottom: 72px;
-        margin-left: 80px;
+        margin-left: 85px;
     }
 
     .footer-socials-container,
@@ -970,7 +970,7 @@ header {
 
     .footer-socials-text {
         padding-top: 0;
-        justify-content: center;
+        padding-left: 160px;
     }
 
     .footer-socials-list {
@@ -980,6 +980,7 @@ header {
     .footer-sub-title {
         display: flex;
         justify-content: center;
+        padding-top: 72px;
     }
 
     .sub-input {
@@ -993,6 +994,17 @@ header {
 
     .footer-button {
         margin-left: 135px;
+    }
+
+    .filter-section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .filter-container {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 16px;
     }
 
     .burger-button {
@@ -1200,8 +1212,6 @@ header {
         padding-bottom: 8px;
     }
 
-
-
     .benefit-item {
         width: 356px;
     }
@@ -1243,6 +1253,7 @@ header {
 
     .footer-container {
         display: block;
+        padding-top: 0;
     }
 
     .footer-logo,
@@ -1270,7 +1281,7 @@ header {
 
     .footer-form-container {
         padding-top: 72px;
-        padding-left: 132px;
+        padding-left: 105px;
     }   
 }
 
@@ -1283,6 +1294,10 @@ header {
     .footer-container {
         display: grid;
         grid: 70px / auto auto auto;
+    }
+
+    .footer-socials-text {
+        padding-left: 0;
     }
 
     .burger-button,
