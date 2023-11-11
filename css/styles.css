@@ -38,16 +38,11 @@ img {
 
 /* GENERAL STYLING */
 .container {
-    max-width: 428px;
     margin: 0 auto;
     padding: 0 auto;
 
     @media screen and (min-width: 768px) {
         max-width: 768px;
-    }
-
-    @media screen and (min-width: 1158px) {
-        max-width: 1158px;
     }
 }
 
@@ -83,6 +78,7 @@ img {
 
 .bg-dark {
     background-color: var(--navy-blue);
+    width: 100%;
 }
 
 .main-title {
@@ -696,9 +692,7 @@ header {
 .footer {
     height: 312px;
     color: var(--cloud);
-    display: flex;
     width: 100%;
-    position: relative;
 }
 
 .footer-container {
@@ -1233,6 +1227,8 @@ header {
 
     .footer {
         height: 456px;
+        width: 100%
+
     }
 
     .footer-container {
@@ -1264,16 +1260,17 @@ header {
 
     .footer-form-container {
         padding-top: 72px;
-    }
-
-    
+        padding-left: 132px;
+    }   
 }
 
 /* desktop setup */
 @media screen and (min-width: 1158px) {
-    /* .container {
+    .container {
         max-width: 1158px;
-    } */
+    }
+
+
 
     .burger-button,
     .menu-container,
