@@ -1192,10 +1192,14 @@ header {
 
     .benefit-list {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: flex-end; 
         align-items: center;
-        width: 100%;
+        width: 768px;
+    }
+
+    .benefit-item {
+        width: 356px;
     }
 
     .team-list {
@@ -1208,28 +1212,61 @@ header {
         row-gap: 64px;
     }
 
+    .team-container {
+        padding-top: 96px;
+    }
+
     .customer-icon {
-        width: 100%;
+        width: 552px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         padding-left: 0;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .customer-title {
+        padding-top: 96px;
+    }
+
+    .footer {
+        height: 456px;
     }
 
     .footer-container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-        margin:0;
-        padding: 0;
-        flex-basis: calc(100% / 2 - 30px);
+        display: block;
     }
 
+    .footer-logo,
+    .footer-socials-text,
+    .footer-form-container {
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
 
+    .footer-text {
+        padding-bottom: 0;
+        padding-left: 0;
+    }
 
- 
+    .footer-column1 {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        column-gap: 24px;
+        padding-top: 97.5px;
+    }
+
+    .footer-form-container {
+        padding-top: 72px;
+    }
+
+    
 }
 
 /* desktop setup */
