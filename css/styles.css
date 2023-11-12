@@ -227,6 +227,10 @@ header {
     url("../images/people-office\ 1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .backdrop {
